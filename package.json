@@ -31,5 +31,8 @@
   "engines": {
     "node": ">=0.8.0"
   },
-  "main": "./lib/croudia"
+  "main": "./lib/croudia",
+  "scripts": {
+    "test": "mocha"
+  }
 }
