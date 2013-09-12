@@ -10,8 +10,8 @@
   "homepage": "https://github.com/yuhki50/node-croudia",
   "author": {
     "name": "yuhki50",
-    "email" "yuhki50@gmail.com"
-  }
+    "email": "yuhki50@gmail.com"
+  },
   "licenses": {
     "type": "MIT",
     "url": "https://raw.github.com/yuhki50/node-croudia/master/LICENSE"
@@ -22,8 +22,7 @@
   },
   "dependencies": {
     "oauth": "0.9.10",
-    "cookies": "0.3.6",
-    "keygrip": "0.2.3"
+    "mime": "1.2.11"
   }, 
   "devDependencies": {
     "should": "*",
