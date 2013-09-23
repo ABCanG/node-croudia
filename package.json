@@ -1,0 +1,35 @@
+{ 
+  "name": "croudia", 
+  "version": "0.0.1",
+  "description": "Croudia API client library for node.js",
+  "keywords": [
+    "croudia",
+    "rest",
+    "oauth"
+  ], 
+  "homepage": "https://github.com/yuhki50/node-croudia",
+  "author": {
+    "name": "yuhki50",
+    "email": "yuhki50@gmail.com"
+  },
+  "licenses": {
+    "type": "MIT",
+    "url": "https://raw.github.com/yuhki50/node-croudia/master/LICENSE"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yuhki50/node-croudia.git"
+  },
+  "dependencies": {
+    "oauth": "0.9.10",
+    "mime": "1.2.11"
+  }, 
+  "devDependencies": {
+    "should": "*",
+    "mocha": "*"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "main": "./lib/croudia"
+}
