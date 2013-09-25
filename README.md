@@ -67,15 +67,14 @@ If your Croudia interaction is very important, double-check the parameters in th
 Croudia's current documentation.
 
 ``` javascript
-crou
-  .updateStatus('Test voice from node-croudia/' + crou.VERSION,
-    function (err, data) {
-      if (err) {
-        console.log(err);
-      }
-      console.log(data);
+crou.updateStatus('Test voice from node-croudia/' + crou.VERSION,
+  function (err, data) {
+    if (err) {
+      console.log(err);
     }
-  );
+    console.log(data);
+  }
+);
 ```
 
 #### Method list
@@ -103,25 +102,26 @@ Croudia#getMentions(params, callback);
 Croudia#updateStatus(text, params, callback);
 Croudia#updateWithMediaStatus(text, media_path, params, callback);
 Croudia#destroyStatus(id, callback);
-Croudia#deleteStatus = Croudia.prototype.destroyStatus;
+Croudia#deleteStatus(id, callback);  // alias destroyStatus
 Croudia#showStatus(id, params, callback);
-Croudia#getStatus = Croudia.prototype.showStatus;
+Croudia#getStatus(id, params, callback);  // alias showStatus
 
 /** Secret mail resources */
 Croudia#getSecretMails(params, callback);
 Croudia#getSecretMailsSent(params, callback);
-Croudia#getSentSecretMails = Croudia.prototype.getSecretMailsSent;
+Croudia#getSentSecretMails(params, callback);  // alias getSecretMailsSent
 Croudia#newSecretMail(id, text, callback);
-Croudia#updateSecretMail = Croudia.prototype.sendSecretMail = Croudia.prototype.newSecretMail;
+Croudia#updateSecretMail(id, text, callback);  // alias newSecretMail
+Croudia.prototype.sendSecretMail(id, text, callback);  // alias newSecretMail
 Croudia#destroySecretMail(id, callback);
-Croudia#deleteSecretMail = Croudia.prototype.destroySecretMail;
+Croudia#deleteSecretMail(id, callback);  // alias destroySecretMail
 Croudia#showSecretMail(id, callback);
-Croudia#getSecretMail = Croudia.prototype.showSecretMail;
+Croudia#getSecretMail(id, callback);  // alias showSecretMail
 
 /** User resources */
 Croudia#showUser(id, callback);
 Croudia#lookupUsers(id, callback);
-Croudia#showUsers = Croudia.prototype.lookupUsers;
+Croudia#showUsers(id, callback);  // alias lookupUsers
 
 /** Various setting resources */
 Croudia#verifyCredentials(callback);
@@ -131,7 +131,7 @@ Croudia#updateProfile(params, callback);
 /** Friendship resources */
 Croudia#createFriendship(id, callback);
 Croudia#destroyFriendship(id, callback);
-Croudia#deleteFriendship = Croudia.prototype.destroyFriendship;
+Croudia#deleteFriendship(id, callback);  // alias destroyFriendship
 Croudia#showFriendship(source, target, callback);
 Croudia#lookupFriendship(id, callback);
 Croudia#getFriendsIds(id, callback);
@@ -142,9 +142,9 @@ Croudia#getFollowersList(id, params, callback);
 /** Favorites resources */
 Croudia#getFavorites(params, callback);
 Croudia#createFavorite(id, params, callback);
-Croudia#favoriteStatus = Croudia.prototype.createFavorite;
+Croudia#favoriteStatus(id, params, callback);  // alias createFavorite
 Croudia#destroyFavorite(id, params, callback);
-Croudia#deleteFavorite = Croudia.prototype.destroyFavorite;
+Croudia#deleteFavorite(id, params, callback);  // alias deleteFavorite
 
 /** Spread resources */
 Croudia#spreadStatus(id, params, callback);
