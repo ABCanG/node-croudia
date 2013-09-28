@@ -3,6 +3,8 @@ Croudia client API for node.js
 
 [node-croudia](https://github.com/yuhki50/node-croudia) aims to provide a complete, asynchronous client library for the Croudia API, including the REST and search endpoints. It was inspired by, and uses some code from, [@AvianFlu](https://github.com/AvianFlu)'s [ntwitter](https://github.com/AvianFlu/ntwitter).
 
+[![Build Status](https://travis-ci.org/yuhki50/node-croudia.png?branch=develop)](https://travis-ci.org/yuhki50/node-croudia)
+
 
 ## Installation
 
