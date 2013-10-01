@@ -26,10 +26,14 @@
   }, 
   "devDependencies": {
     "should": "*",
-    "mocha": "*"
+    "mocha": "*",
+    "jsdoc": "git://github.com/jsdoc3/jsdoc.git"
   },
   "engines": {
     "node": ">=0.8.0"
   },
-  "main": "./lib/croudia"
+  "main": "./lib/croudia",
+  "scripts": {
+    "doc": "jsdoc lib -d doc"
+  }
 }
